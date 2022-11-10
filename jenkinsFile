@@ -26,5 +26,9 @@ pipline{
   }
 }
 post{
-  echo 'we have reached the post stage'
+  steps{
+    always{
+      echo 'we have reached the post stage'
+    }
+  }
 }
